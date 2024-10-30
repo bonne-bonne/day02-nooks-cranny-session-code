@@ -1,0 +1,115 @@
+.outerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 250px;
+    min-height: 250px;
+
+    margin: 10px;
+    padding: 10px;
+    border-radius: 2px;
+
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+
+    color: #5d5244;
+    background-color: #fdfef5;
+    box-shadow: 0 3px 5px #464a7a42;
+}
+
+/* ===== Image Container ====== */
+/* This displays the background image and an icon */
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    width: 100%;
+
+    background-image: url('../../../assets/green-background.png');
+    background-size: 150%;
+}
+
+.productImage{
+    scale: 0.7;
+    transition: transform 1s;
+}
+
+.imgContainer:hover .productImage{
+    transform: scale(1.2);
+    background-size: 200%;
+}
+
+/* ====== Price Container ====== */
+/* This is the section that displays the product name and the price in bells */
+
+.priceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 100%;
+}
+
+.priceContainer h3 { 
+    margin-top: 5px;
+
+    font-weight: 700;
+    text-decoration: none; 
+}
+
+.priceContainer span {
+    display: flex;
+    align-items: flex-end;
+    gap: .3rem;
+    
+    height: 100%;
+
+    font-size: .8rem;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.priceContainer img {
+    max-height: 1.6rem;
+}
+
+@media only screen and (max-width: 815px) {
+    .outerContainer {
+        width: 440px;
+        /* height: 300px; */
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .outerContainer {
+        width: 280px;
+        /* height: 300px; */
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .outerContainer {
+        position: relative;
+        width: 200px;
+        min-height: 200px;
+    }
+
+    .outerContainer h3 {
+        font-size: 1rem;
+    }
+
+    .priceContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .priceContainer img {
+        max-height: 1.2rem;
+    }
+
+    
+}

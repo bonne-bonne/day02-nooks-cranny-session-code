@@ -1,0 +1,64 @@
+.outerContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 3.5rem;
+    width: 100vw;
+
+    /* Outside solid line border */
+    border-top: 4px solid #f9f4da;
+    border-bottom: 4px solid #f9f4da;
+    padding: 0.4rem 0;
+    margin-bottom: 1.2rem;
+    
+    background-color: #6478e8;
+    box-shadow: 0 3px 5px #464a7a42; 
+}
+
+/* This is a container that adds the dotted border into the ribbon */
+.dotsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    min-height: 4.4rem;
+
+    padding: 0.2rem 0;
+    border-bottom: 4px dotted #f9f4da;
+    border-top: 4px dotted #f9f4da;
+}
+
+/* ======= Banner Section ====== */
+/* The banner is the decorative scroll and it links back to home */
+.banner {
+    display: flex;
+    position: absolute; /* this positions it on top of the ribbon */
+    top: -25px;
+    height: 150px;
+}
+
+.link {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+    width: 100%;
+    height: 100%; 
+
+    color:#f9f4da;
+    text-decoration: none;
+}
+
+.banner h1 {
+    margin-top: 30px;
+
+    font-family: "Coustard", serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-shadow: rgba(84, 83, 79, 0.192) 1px 0 10px;
+}
